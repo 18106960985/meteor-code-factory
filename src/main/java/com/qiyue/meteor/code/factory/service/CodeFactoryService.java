@@ -1,7 +1,8 @@
-package com.github.qiyue.code.factory.mapper;
+package com.qiyue.meteor.code.factory.service;
 
-import com.github.qiyue.code.factory.entity.ColumnEntity;
-import com.github.qiyue.code.factory.entity.TableEntity;
+import com.qiyue.meteor.code.factory.entity.ColumnEntity;
+import com.qiyue.meteor.code.factory.entity.TableEntity;
+import com.qiyue.meteor.code.factory.model.TemplaseMdeol;
 
 import java.util.List;
 import java.util.Map;
@@ -9,9 +10,7 @@ import java.util.Map;
 /**
  * created by yebinghuan on 2018/4/17
  */
-public interface CodeFactoryMapper {
-
-
+public interface CodeFactoryService {
     /**
      *  获取全部数据库表
      * @param map
@@ -25,4 +24,6 @@ public interface CodeFactoryMapper {
     TableEntity getTableByTableName (String tableName);
 
     List<ColumnEntity> getColumnsByTableName(String tableName);
+
+    public byte[] produceCode(List<TemplaseMdeol> templaseMdeols);
 }

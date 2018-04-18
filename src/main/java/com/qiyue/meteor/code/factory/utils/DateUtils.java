@@ -21,7 +21,7 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-package com.github.qiyue.code.factory.utils;
+package com.qiyue.meteor.code.factory.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,9 +1,9 @@
-package com.github.qiyue.code.factory.utils;
+package com.qiyue.meteor.code.factory.utils;
 
-import com.github.qiyue.code.factory.entity.ColumnEntity;
-import com.github.qiyue.code.factory.entity.TableEntity;
-import com.github.qiyue.code.factory.model.ColumnModel;
-import com.github.qiyue.code.factory.model.TableModel;
+import com.qiyue.meteor.code.factory.entity.ColumnEntity;
+import com.qiyue.meteor.code.factory.entity.TableEntity;
+import com.qiyue.meteor.code.factory.model.ColumnModel;
+import com.qiyue.meteor.code.factory.model.TableModel;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;
@@ -55,7 +55,7 @@ public class CodeFactoryUtils {
      * @param zip    压缩包流
      * @param templates  选用的模板列表
      */
-    public static void produceCode(TableEntity tableEntity, List<ColumnEntity> columnEntities, ZipOutputStream zip,List<String> templates) {
+    public static void produceCode(TableEntity tableEntity, List<ColumnEntity> columnEntities, ZipOutputStream zip, List<String> templates) {
 
         //获取配置文件信息
         Configuration config = getConfig();

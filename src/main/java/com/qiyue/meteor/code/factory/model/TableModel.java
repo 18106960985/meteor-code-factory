@@ -1,4 +1,4 @@
-package com.github.qiyue.code.factory.model;
+package com.qiyue.meteor.code.factory.model;
 
 import java.util.List;
 

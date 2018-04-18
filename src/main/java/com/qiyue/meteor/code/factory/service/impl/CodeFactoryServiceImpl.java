@@ -1,11 +1,11 @@
-package com.github.qiyue.code.factory.service.impl;
+package com.qiyue.meteor.code.factory.service.impl;
 
-import com.github.qiyue.code.factory.entity.ColumnEntity;
-import com.github.qiyue.code.factory.entity.TableEntity;
-import com.github.qiyue.code.factory.mapper.CodeFactoryMapper;
-import com.github.qiyue.code.factory.model.TemplaseMdeol;
-import com.github.qiyue.code.factory.service.CodeFactoryService;
-import com.github.qiyue.code.factory.utils.CodeFactoryUtils;
+import com.qiyue.meteor.code.factory.entity.ColumnEntity;
+import com.qiyue.meteor.code.factory.entity.TableEntity;
+import com.qiyue.meteor.code.factory.mapper.CodeFactoryMapper;
+import com.qiyue.meteor.code.factory.model.TemplaseMdeol;
+import com.qiyue.meteor.code.factory.service.CodeFactoryService;
+import com.qiyue.meteor.code.factory.utils.CodeFactoryUtils;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

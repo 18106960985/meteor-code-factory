@@ -1,4 +1,4 @@
-package com.github.qiyue.code.factory;
+package com.qiyue.meteor.code.factory;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

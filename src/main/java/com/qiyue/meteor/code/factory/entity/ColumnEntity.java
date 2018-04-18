@@ -1,4 +1,4 @@
-package com.github.qiyue.code.factory.entity;
+package com.qiyue.meteor.code.factory.entity;
 
 /**
  * created by yebinghuan on 2018/4/17
