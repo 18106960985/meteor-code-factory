@@ -1,0 +1,29 @@
+# Tomcat 配置
+server:
+    tomcat:
+        max-threads: 10
+        min-spare-threads: 10
+    port: 7788
+
+# spring 与模板配置
+spring:
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://111.230.210.81:3306/useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: Qiyue666666!
+    jackson:
+        time-zone: GMT+8
+        date-format: yyyy-MM-dd HH:mm:ss
+    thymeleaf:
+        mode: LEGACYHTML5
+        cache: false
+        prefix: classpath:/view/
+    resources:
+      static-locations: classpath:/static/
+
+# Mybatis 配置
+mybatis:
+    mapperLocations: classpath:mapper/**/*.xml
+
