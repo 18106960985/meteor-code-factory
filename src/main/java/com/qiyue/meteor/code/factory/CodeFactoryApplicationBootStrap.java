@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * created by yebinghuan on 2018/4/17
  */
 @SpringBootApplication
-@MapperScan("com.github.qiyue.code.factory.mapper") //mybatis扫描注解
+@MapperScan("com.qiyue.meteor.code.factory.mapper") //mybatis扫描注解
 public class CodeFactoryApplicationBootStrap {
 
     public static void main(String[] args) {

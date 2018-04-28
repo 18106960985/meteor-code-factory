@@ -124,7 +124,6 @@ public class CodeFactoryUtils {
         VelocityContext context = new VelocityContext(params);
 
 
-         if (templates.size() <1) templates = getTemplates();
 
         templates.stream().forEach( template ->{
             //渲染模板
@@ -175,7 +174,7 @@ public class CodeFactoryUtils {
      */
     public static Configuration getConfig() {
         try {
-            return new PropertiesConfiguration("templatesConfig.properties.properties");
+            return new PropertiesConfiguration("templatesConfig.properties");
         } catch (ConfigurationException e) {
             throw new RuntimeException("获取配置文件失败，", e);
         }

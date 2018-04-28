@@ -9,6 +9,7 @@ import java.util.Map;
 /**
  * created by yebinghuan on 2018/4/17
  */
+
 public interface CodeFactoryMapper {
 
 
