@@ -10,16 +10,16 @@ spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://mysql.meta:3306/talkie?useUnicode=true&characterEncoding=UTF-8
+        url: jdbc:mysql://111.230.210.81:3306/ag_admin?useUnicode=true&characterEncoding=UTF-8
         username: root
-        password: Meta.123
+        password: Qiyue666666!
     jackson:
         time-zone: GMT+8
         date-format: yyyy-MM-dd HH:mm:ss
     thymeleaf:
         mode: LEGACYHTML5
         cache: false
-        prefix: classpath:/vo/
+        prefix: classpath:/view/
     resources:
       static-locations: classpath:/static/
 

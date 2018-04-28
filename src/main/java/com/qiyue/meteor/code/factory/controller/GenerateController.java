@@ -1,6 +1,6 @@
 package com.qiyue.meteor.code.factory.controller;
 
-import com.qiyue.meteor.code.factory.constant.Constant;
+import com.qiyue.meteor.code.factory.constant.CommonConstant;
 import com.qiyue.meteor.code.factory.entity.TableEntity;
 import com.qiyue.meteor.code.factory.model.TemplaseMdeol;
 import com.qiyue.meteor.code.factory.service.CodeFactoryService;
@@ -20,15 +20,14 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by y747718944 on 2018/4/28
+ * created by yebinghuan on 2018/4/22
+ *  代码生成器控制器
  */
 @RestController
-@RequestMapping(Constant.API+"/generator")
-public class GeneratorController {
-
+@RequestMapping(CommonConstant.API_URI + "generate")
+public class GenerateController {
     @Autowired
     CodeFactoryService codeFactoryService;
-
 
     @GetMapping("/page")
     public TableResult<TableEntity> getTablePage(@RequestParam Map<String, Object> params){
@@ -60,6 +59,5 @@ public class GeneratorController {
 
         IOUtils.write(data, response.getOutputStream());
     }
-
 
 }
