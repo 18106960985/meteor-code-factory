@@ -12,7 +12,7 @@ spring:
         driverClassName: com.mysql.jdbc.Driver
         url: jdbc:mysql://111.230.210.81:3306/ag_admin?useUnicode=true&characterEncoding=UTF-8
         username: root
-        password: Qiyue666666!
+        password: 
     jackson:
         time-zone: GMT+8
         date-format: yyyy-MM-dd HH:mm:ss
