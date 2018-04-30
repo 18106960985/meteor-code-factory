@@ -1,38 +1,41 @@
-import fetch from 'utils/fetch';
+import request from '@/utils/request'
+import {API_ROOT}from '@/utils/lib/commonConstant'
+
+const API = API_ROOT + "${moduleName}/${secondModuleName}/"
 
 export function page(query) {
-return fetch({
-url: '/api/${moduleName}/${secondModuleName}/page',
+return request({
+url: API + 'page',
 method: 'get',
 params: query
 });
 }
 
 export function addObj(obj) {
-return fetch({
-url: '/api/${moduleName}/${secondModuleName}',
+return request({
+url: API,
 method: 'post',
 data: obj
 });
 }
 
 export function getObj(id) {
-return fetch({
-url: '/api/${moduleName}/${secondModuleName}/' + id,
+return request({
+url: API +  id,
 method: 'get'
 })
 }
 
 export function delObj(id) {
-return fetch({
-url: '/api/${moduleName}/${secondModuleName}/' + id,
+return request({
+url:  API +  id,
 method: 'delete'
 })
 }
 
 export function putObj(id, obj) {
-return fetch({
-url: '/api/${moduleName}/${secondModuleName}/' + id,
+return request({
+url:  API +  id,
 method: 'put',
 data: obj
 })

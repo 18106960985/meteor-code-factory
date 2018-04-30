@@ -42,7 +42,7 @@ public class GenerateController {
      */
     @RequestMapping("/code")
     public void code(@RequestParam String[] tableNames, HttpServletResponse response) throws IOException {
-        System.err.println("tableNames:" +tableNames[0]);
+
         List<TemplaseMdeol> templaseMdeols = new ArrayList<>();
         for(String tableName : tableNames){
             TemplaseMdeol model = new TemplaseMdeol();
@@ -53,9 +53,9 @@ public class GenerateController {
         byte[] data = codeFactoryService.produceCode(templaseMdeols);
 
         response.reset();
-        response.setHeader("Content-Disposition", "attachment; filename=\"ag-admin-code.zip\"");
+        response.setHeader("Content-Disposition", "attachment; filename=\"meteror-code.zip\"");
         response.addHeader("Content-Length", "" + data.length);
-        response.setContentType("application/octet-stream; charset=UTF-8");
+        response.setContentType("application/zip; charset=UTF-8");
 
         IOUtils.write(data, response.getOutputStream());
     }

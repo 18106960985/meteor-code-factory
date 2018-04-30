@@ -38,12 +38,11 @@ public class CodeFactoryUtils {
      */
     public static List<String> getTemplates() {
         List<String> templates = new ArrayList<String>();
+        templates.add("template/repository.java.vm");
         templates.add("template/index.js.vm");
         templates.add("template/index.vue.vm");
-        templates.add("template/mapper.xml.vm");
         templates.add("template/biz.java.vm");
         templates.add("template/entity.java.vm");
-        templates.add("template/mapper.java.vm");
         templates.add("template/controller.java.vm");
         return templates;
     }
@@ -214,6 +213,10 @@ public class CodeFactoryUtils {
         if (template.contains("biz.java.vm")) {
             return packagePath + "biz" + File.separator + className + "Biz.java";
         }
+
+        if (template.contains("repository.java.vm")) {
+            return packagePath + "repository" + File.separator + className + "Repository.java";
+        }
         if (template.contains("mapper.java.vm")) {
             return packagePath + "mapper" + File.separator + className + "Mapper.java";
         }
@@ -221,11 +224,14 @@ public class CodeFactoryUtils {
             return packagePath + "entity" + File.separator + className + ".java";
         }
         if (template.contains("controller.java.vm")) {
-            return packagePath + "rest" + File.separator + className + "Controller.java";
+            return packagePath + "controller" + File.separator + className + "Controller.java";
         }
         if (template.contains("mapper.xml.vm")) {
             return "main" + File.separator + "resources" + File.separator + "mapper" + File.separator + className + "Mapper.xml";
         }
+
+
+
 
         return null;
     }

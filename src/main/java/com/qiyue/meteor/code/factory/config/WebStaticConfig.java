@@ -27,7 +27,7 @@ public class WebStaticConfig extends WebMvcConfigurerAdapter{
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         //默认界面
-        registry.addViewController("").setViewName("index");
+        registry.addViewController("").setViewName( "forward:/index.html" );
     }
     @Bean
     public ViewResolver viewResolver() {

@@ -1,0 +1,19 @@
+package ${package}.repsitory;
+
+import ${package}.entity.${className};
+import com.qiyue.orm.jpa.dao.BaseRepository;
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+
+public interface ${className}Repsitory extends BaseRepository<${className} ,Long>{
+
+
+}
+
+
+

@@ -1,10 +1,10 @@
 package ${package}.biz;
 
-import org.springframework.stereotype.Service;
-
 import ${package}.entity.${className};
-import ${package}.mapper.${className}Mapper;
-import com.github.wxiaoqi.security.common.biz.BaseBiz;
+import ${package}.repsitory.${className}Repsitory;
+import com.qiyue.common.biz.BaseBiz;
+import org.springframework.data.domain.Page;
+import org.springframework.stereotype.Service;
 
 /**
  * ${comments}
@@ -14,5 +14,6 @@ import com.github.wxiaoqi.security.common.biz.BaseBiz;
  * @date ${datetime}
  */
 @Service
-public class ${className}Biz extends BaseBiz<${className}Mapper,${className}> {
+public class  ${className}Biz  extends BaseBiz<${className}Repsitory, ${className}, Long>{
+
 }
